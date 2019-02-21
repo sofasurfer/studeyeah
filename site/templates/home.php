@@ -24,7 +24,7 @@
                 <h2>Video</h2>
             </div>
             <?php foreach($page->videolink()->toStructure() as $item): ?>
-            <div class="col-md-6">
+            <div class="col-md-6 col-video">
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe src="<?= $item->url()->html() ?>" frameborder="0" allowfullscreen></iframe>
                 </div>
