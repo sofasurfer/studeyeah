@@ -7,7 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://www.sofasurfer.org/stream/assets/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://www.sofasurfer.org/stream/assets/bcSwipe/jquery.bcSwipe.min.js"></script>
-    <?= js('assets/js/main.js') ?>
+    <?= js('assets/js/main.js?v=1') ?>
     <!-- Piwik -->
     <script type="text/javascript">
       var _paq = _paq || [];
