@@ -1,0 +1,36 @@
+# System files
+# ------------
+
+Icon
+.DS_Store
+notes.txt
+google5fba4604b60db138.html
+robots.txt
+
+# Temporary files
+# ---------------
+
+/thumbs/*
+!/thumbs/index.html
+
+/site/cache/*
+!/site/cache/index.html
+
+# -------------SECURITY-------------
+# NEVER publish these files via Git!
+# -------------SECURITY-------------
+
+# Kirby accounts
+# ---------------
+
+/content/*
+!/site/content/index.html
+
+/site/accounts/*
+!/site/accounts/index.html
+
+# Avatars
+# ---------------
+
+/assets/avatars/*
+!/assets/avatars/index.html

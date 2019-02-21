@@ -1,0 +1,51 @@
+title: Home
+
+pages: false
+
+fields:
+  title:
+    label: Title
+    type:  text
+
+  intro:
+    label: Intro
+    type:  text
+
+  text:
+    label: Text
+    type:  textarea
+
+  videolink:
+    label: Video
+    type: structure
+    style: table
+    fields:
+      url:
+        label: URL
+        type: text
+
+  mx3link:
+    label: MX3 Link
+    type: text
+
+  tourdates:
+    label: Tourdates
+    type: structure
+    style: table
+    fields:
+      date:
+        label: Date
+        type: date
+      title:
+        label: Title
+        type: text
+      location:
+        label: Location
+        type: text
+      url:
+        label: URL
+        type: text
+
+  contact:
+    label: Contact
+    type:  textarea
