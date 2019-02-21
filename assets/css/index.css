@@ -154,8 +154,18 @@ a.anchor {
 }
 
 body .jumbotron.header ul.nav-main{
-  display: none;
+  display: block;
 }
+body .jumbotron.header ul.nav-main a.active{
+  color: white;
+  text-decoration: none;
+  border-radius: 2px;
+  background-color: #DC143C!important;
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+}
+
 
 @media screen and (min-width: 1200px){
     .jumbotron{

@@ -2,12 +2,12 @@
 <body class="" data-spy="scroll" data-target="#nav-main" >
     <div class="jumbotron header">
       <h1><?= $page->title()->html() ?></h1>
-      <ul id="nav-main" class="nav-main">
-          <li><a href="#info">Info</a></li>
-          <li><a href="#video">Video</a></li>
-          <li><a href="#musik">Musik</a></li>
-          <li><a href="#gigs">Gigs</a></li>
-          <li><a href="#kontakt">Kontakt</a></li>
+      <ul id="nav-main" class="nav nav-main">
+          <li><a class="info" href="#info">Info</a></li>
+          <li><a class="video" href="#video">Video</a></li>
+          <li><a class="musik" href="#musik">Musik</a></li>
+          <li><a class="gigs" href="#gigs">Gigs</a></li>
+          <li><a class="kontakt" href="#kontakt">Kontakt</a></li>
       </ul>
     </div>
     <div class="container">
@@ -24,7 +24,7 @@
                 <h2>Video</h2>
             </div>
             <?php foreach($page->videolink()->toStructure() as $item): ?>
-            <div class="col-md-4 col-video">
+            <div class="col-md-6 col-video">
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe src="<?= $item->url()->html() ?>" frameborder="0" allowfullscreen></iframe>
                 </div>
