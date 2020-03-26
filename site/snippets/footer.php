@@ -1,5 +1,8 @@
-    <div class="jumbotron footer">
-      <h1></h1>
+    <div class="footer">
+      <img  class="img-responsive"
+            src="/assets/images/footer2.jpg"
+            srcset="/assets/images/footer2.jpg  900w,
+                    /assets/images/footer2.jpg 1024w"     />
     </div>
     <footer>         
       <p><a href="https://www.sofasurfer.org" target="_blank" title="Built by SofaSurfer">Built by SofaSurfer</a></p>

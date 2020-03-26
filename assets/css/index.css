@@ -22,14 +22,19 @@ body{
 
 .jumbotron{
     position: relative;
-    background-position: top center;
-    background-image: url('/assets/images/header.png');
+
+/*    background-position: top center;
+    background-image: url('/assets/images/header-2-desktop2.png');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 800px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+*/
+    /*height: 800px;*/
 }
+
 .jumbotron.footer{
     margin-top: 2em;
     margin-bottom: 0px;
@@ -38,18 +43,21 @@ body{
     background-position: center center;    
     background-image: url('assets/images/footer.jpg');
 }
-.jumbotron h1,
-.jumbotron h2{
+.header{
+  position: relative;
+}
+.header h1,
+.header h2{
     margin-bottom: 0px!important;
     padding-bottom: 0px!important;
     /*text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;*/
 }
-.jumbotron h2{
+.header h2{
     margin-top: 0px!important;
     padding-top: 0px!important;    
     margin-bottom: 50px!important;    
 }
-.jumbotron h1,
+/*.jumbotron h1,
 h1{
     color: #DC143C;
     font-weight: bolder;
@@ -57,7 +65,8 @@ h1{
     margin-top: 30px;  
     margin-bottom: 60px;  
     font-family: 'Shrikhand', cursive;
-}
+}*/
+h1,
 h2{
     color: #DC143C;
     margin-top: 2em;  
@@ -83,6 +92,10 @@ a:hover{
   -webkit-transition: background-color 500ms linear;
   -ms-transition: background-color 500ms linear;
   transition: background-color 500ms linear;
+}
+
+.img-mobile{
+  display: none;
 }
 
 .spacetop{
@@ -142,7 +155,7 @@ footer{
 }
 
 .social-links li a:hover{
-  font-size: auto;
+  background-color: transparent;
 }
 
 
@@ -166,6 +179,13 @@ body .jumbotron.header ul.nav-main a.active{
   transition: background-color 500ms linear;
 }
 
+.stream-list a{
+  color: transparent;
+}
+.stream-list a:hover{
+  background-color: transparent!important;
+
+}
 
 @media screen and (min-width: 1200px){
     .jumbotron{
@@ -208,20 +228,16 @@ body .jumbotron.header ul.nav-main a.active{
 
 @media screen and (min-width: 0px) and (max-width: 900px){
     body{
-      font-size: 2em;  
+      font-size: 2em;
     }
-    .jumbotron{
-        height: 400px;
-        background-position: right center;
-    }    
     h1,
-    .jumbotron h1{
-        font-size: 2.4em; 
+    .header h1{
+        font-size: 2em; 
         margin-top: 20px;    
 
     }
     h2,
-    .jumbotron h2{
+    .header h2{
         font-size: 1.5em; 
     }
     .logo{
@@ -236,6 +252,12 @@ body .jumbotron.header ul.nav-main a.active{
     }
     .jumbotron.footer{
         height: 500px;
+    }
+    .img-desktop{
+      display: none;
+    }
+    .img-mobile{
+      display: block;
     }
 }
 

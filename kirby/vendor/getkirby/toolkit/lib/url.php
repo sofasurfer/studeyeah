@@ -397,6 +397,8 @@ class Url {
    */
   public static function unIdn($url) {
 
+    return $url;
+
     if(!function_exists('idn_to_ascii')) return $url;
 
     // disassemble the URL, convert the domain name and reassemble

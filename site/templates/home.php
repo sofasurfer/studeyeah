@@ -1,7 +1,11 @@
 <?php snippet('header') ?>
 <body class="" data-spy="scroll" data-target="#nav-main" >
-    <div class="jumbotron header">
-      <h1><?= $page->title()->html() ?></h1>
+    <div class="header">
+      <!--h1><?= $page->title()->html() ?></h1-->
+      <img  class="img-responsive img-desktop"
+            src="/assets/images/header-2-desktop2.png"     />
+        <img  class="img-responsive img-mobile"
+            src="/assets/images/header-2-mobile.jpg"     />
       <ul id="nav-main" class="nav nav-main">
           <li><a class="info" href="#info">Info</a></li>
           <li><a class="video" href="#video">Video</a></li>
@@ -14,8 +18,8 @@
         <div class="row">
             <div class="col-md-12">
                 <a class="anchor" id="info"></a>
-              <h2><?= $page->intro()->kirbytext() ?></h2>
-            <?= $page->text()->kirbytext() ?>
+              <h1><?= $page->intro()->kirbytext() ?></h1>
+              <?= $page->text()->kirbytext() ?>
             </div>
         </div>       
         <div class="row">
@@ -34,14 +38,18 @@
               <p class="spacetop"><a href="https://www.youtube.com/channel/UC-PIf2MiyQXQbwOMLsSD-PQ" class="border" target="_blank">Meh Video auf youtube.com</a></p>
             </div>
         </div>
+
         <div class="row">
-            <div class="col-md-6 col-md-offset-3">
+            <div class="col-md-12">
                 <a class="anchor" id="musik"></a>
-                <h2>Musik</h2>
-                <iframe src="<?= $page->mx3link()->html() ?>" width="100%" height="68" scrolling="no" frameborder="no" allowfullscreen></iframe>
-                <p><a class="border" href="http://mx3.ch/studeyeah" target="_blank">Meh Musig auf mx3.ch</a></p>
+                <h2>New Album</h2>
+                <div class="col-md-6 col-md-offset-3">
+                    <img class="img-responsive" src="/assets/images/album-jo-sicher.jpg">
+                </div>
             </div>
         </div>
+        <?= $page->mx3link()->html() ?>
+
         <div class="row">
             <div class="col-md-12">
                 <a class="anchor" id="gigs"></a>
