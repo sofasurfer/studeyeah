@@ -3,7 +3,7 @@
     <div class="header">
       <!--h1><?= $page->title()->html() ?></h1-->
       <img  class="img-responsive img-desktop"
-            src="/assets/images/header-2-desktop2.png"     />
+            src="/assets/images/header-2-desktop2.jpg"     />
         <img  class="img-responsive img-mobile"
             src="/assets/images/header-2-mobile.jpg"     />
       <ul id="nav-main" class="nav nav-main">
