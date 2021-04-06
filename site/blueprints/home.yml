@@ -24,15 +24,18 @@ fields:
         label: URL
         type: text
 
-  mx3link:
-    label: Music downloads
-    type: textarea
+  # mx3link:
+  #   label: Music downloads
+  #   type: textarea
 
   tourdates:
     label: Tourdates
     type: structure
     style: table
     fields:
+      canceled:
+        label: Canceled
+        type: checkbox
       date:
         label: Date
         type: date
