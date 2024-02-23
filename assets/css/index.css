@@ -180,12 +180,39 @@ body .jumbotron.header ul.nav-main a.active{
 }
 
 .stream-list a{
+  padding: 0px;
   color: transparent;
 }
 .stream-list a:hover{
   background-color: transparent!important;
 
 }
+
+#pastcheck{
+  display: none;
+}
+h3 label{
+  margin: 20px;
+  cursor: pointer;
+}
+
+table.table-past{
+  display: none;
+  opacity: 0;
+  /*max-height: 0px;*/
+}
+
+.canceled-show{
+  text-decoration: line-through;
+  text-decoration-color: #DC143C;
+}
+
+#pastcheck:checked + table.table-past{
+  display:block;
+  opacity: 1;
+  /*max-height: 1000px;*/
+}
+
 
 @media screen and (min-width: 1200px){
     .jumbotron{
